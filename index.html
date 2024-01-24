@@ -22,6 +22,11 @@
         justify-content: center;
         padding-left:35%;
       }
+      @media screen and (max-width:600px) {
+        .border-1{
+            padding-left:0% 
+        }
+      }
     </style>
 </head>
 <body>
@@ -32,7 +37,7 @@
             <h1 class="text-4xl font-serif">Hockey<span class=" text-[#FF4240;]">’</span>s</h1>
         </div>
 
-        <div class=" hidden lg:flex  ">
+        <div class=" hidden lg:flex space-x-3 ">
             <a href=""> <span class="text-[#FF4240;]">Home</span></a>
             <a href="">About</a>
             <a href="">Contact</a>
@@ -41,7 +46,7 @@
         </div>
         
         <div class="flex justify-center items-center">
-            <img class=" hidden lg:flex" src="Images/Frame (1).svg" alt="">
+            <img class=" hidden lg:flex" src="Images/sarc.svg" alt="">
             <button class="bg-[#FF4240;] px-4 py-2 rounded-lg text-white">Get Ticket</button>
         </div>
     </div>
@@ -316,24 +321,24 @@
         <div class="flex justify-between gap-x-6 my-8">
             <div>
                 <b> <p class="text-xl ">Your Full Nane</p>
-                </b><input class="text-2xl rounded-lg bg-stone-100" type="text" placeholder="Enter Your Full Nane">
+                </b><input class="text-lg lg:text-2xl rounded-lg bg-stone-100" type="text" placeholder="Enter Your Full Nane">
             </div>
 
             <div>
                 <b> <p class="text-xl ">Your Email</p></b>
-                <input class="text-2xl rounded-lg bg-stone-100" type="email" name="" id="" placeholder="Enter Your Email">
+                <input class="text-lg lg:text-2xl rounded-lg bg-stone-100" type="email" name="" id="" placeholder="Enter Your Email">
             </div>
         </div>
 
         <div class="flex justify-between gap-x-6 my-8">
             <div>
                 <b> <p class="text-xl ">Your Subject</p></b>
-                <input class="text-2xl rounded-lg bg-stone-100" type="text" placeholder="Enter Your Subject">
+                <input class="text-lg lg:text-2xl rounded-lg bg-stone-100" type="text" placeholder="Enter Your Subject">
             </div>
 
             <div>
                 <b> <p class="text-xl ">Your Number</p></b>
-                <input class="text-2xl rounded-lg bg-stone-100" type="number" name="" id="" placeholder="Enter Your Number">
+                <input class="text-lg lg:text-2xl rounded-lg bg-stone-100" type="number" name="" id="" placeholder="Enter Your Number">
             </div>
         </div>
 
@@ -342,7 +347,7 @@
 
         <input class="text-2xl w-11/12 h-48 bg-stone-100" type="text" placeholder="Message">
         <br> <br> <br> 
-        <input class="bg-[#FF4240;] px-64 py-2 rounded-xl text-white font-serif" type="button" value="Send Message">
+        <input class="px-24 bg-[#FF4240;] lg:px-48 py-2 rounded-xl text-white font-serif" type="button" value="Send Message">
     </div>
 </div>
 
@@ -355,8 +360,57 @@
     <img src="Images/Facebook.png" alt="">
     </div>
 </div>
-<footer>
-    
+<footer class=" lg:flex justify-around items-center text-white bg-[#131318;] py-20 w-full ">
+    <div class="px-16 py-6 lg:">
+        <h3 class="text-2xl pb-4">Get In Touch</h3>
+        <p class="pb-6  text-[#FFFFFF99]"> The laboriosam itaque veritatis et nihil consequatur corrupti <br> unde odio nam nostrum rem sint, dolor neque.</p>
+
+        <div class="flex items-center pb-4">
+
+            <img src="Images/Email (1).png" alt="">
+            <p class="text-[#FFFFFF99] pl-3">ockeys@support.com</p>
+
+        </div>
+        <div class="flex items-center">
+
+            <img src="Images/phone.png" alt="">
+            <p class="text-[#FFFFFF99] pl-3">(+62) 123-321-541</p>
+
+        </div>
+    </div>
+
+    <div class="pl-24 flex lg:pl-2">
+        <div>
+            <nav>
+                <header class="">Services</header> <br>
+                <a class="text-[#FFFFFF99]">Branding</a><br>
+                <a class="text-[#FFFFFF99]">Design</a><br>
+                <a class="text-[#FFFFFF99]">Marketing</a><br>
+                <a class="text-[#FFFFFF99]">Advertisement</a><br>
+            </nav> 
+        </div>
+        <div class="pl-6 lg:pl-40">
+            <nav>
+                <header class="">Company</header> <br>
+                <a class="text-[#FFFFFF99]">About us</a><br>
+                <a class="text-[#FFFFFF99]">Contact</a><br>
+                <a class="text-[#FFFFFF99]">Jobs</a><br>
+                <a class="text-[#FFFFFF99]">Press kit</a><br>
+            </nav> 
+        </div>
+    </div>
+
+    <div class="pl-44 pt-10 lg: items-center">
+        <nav>
+            <header class="">Support</header> <br>
+            <a class="text-[#FFFFFF99]">FAQ</a><br>
+            <a class="text-[#FFFFFF99]"> Ticket Support</a><br>
+            <a class="text-[#FFFFFF99]">Cookie policy</a><br>
+            <a class="text-[#FFFFFF99]"> Contact Us</a><br>
+            <a class="text-[#FFFFFF99]"> Help</a><br>
+        </nav>
+    </div>
+
 </footer>
 </body>
 </html>
